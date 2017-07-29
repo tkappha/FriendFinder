@@ -29,6 +29,8 @@ app.use(bodyParser.text({ type: 'text/html' }))
 
 // *****  end npm body-parser copied code *****************
 
+require("./app/routing/htmlRoutes.js")(app);
+
 
 app.listen(PORT, function() {
 	console.log("Listening on port: " + PORT);
